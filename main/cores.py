@@ -58,3 +58,19 @@ Inclements = {
     'Inverted': '\033[7m',  # Inverte a cor do texto com o fundo
     'Strikethrough': '\033[9m'
 }
+
+# Demonstration
+for name, color in Normal_colors.items():
+    print(f'{color}{name.title()}{reset}')
+print()
+for name, color in IColors.items():
+    print(f'{color}{name.title()}{reset}')
+print()
+for name, color in Bg_Colors.items():
+    print(f'{color}{name.title()}{reset}')
+print()
+for name, color in On_IColors.items():
+    print(f'{color}{name.title()}{reset}')
+print()
+for name, inclement in Inclements.items():
+    print(f'{inclement}{name.title()}{reset}')
