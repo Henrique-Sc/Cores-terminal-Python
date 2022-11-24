@@ -1,3 +1,9 @@
+def title(txt, cor=0, tam=30):
+    print(Normal_colors[cor], end='')
+    print('=' * tam)
+    print(f'{txt}'.center(tam))
+    print('=' * tam, end='')
+    print(reset)
 
 
 reset = '\033[m'
