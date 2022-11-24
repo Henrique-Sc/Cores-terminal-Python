@@ -71,15 +71,23 @@ Inclements = {
 title('Normal colors')
 for name, color in Normal_colors.items():
     print(f'{color}{name.title()}{reset}')
-print()
+print('')
+
+title('Intensy colors')
 for name, color in IColors.items():
     print(f'{color}{name.title()}{reset}')
-print()
+print('')
+
+title('Background colors')
 for name, color in Bg_Colors.items():
     print(f'{color}{name.title()}{reset}')
-print()
+print('')
+
+title('High Intensty backgrounds')
 for name, color in On_IColors.items():
     print(f'{color}{name.title()}{reset}')
-print()
+print('')
+
+title('Inclements')
 for name, inclement in Inclements.items():
     print(f'{inclement}{name.title()}{reset}')
