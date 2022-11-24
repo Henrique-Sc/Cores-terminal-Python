@@ -1,5 +1,6 @@
 def title(txt, color=1, size=30):
     colors = list(Normal_colors.values())
+
     print(colors[color], end='')
     print('=' * size)
     print(f'{txt}'.center(size))
