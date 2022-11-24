@@ -1,11 +1,13 @@
-def title(txt, cor=0, tam=30):
-    print(Normal_colors[cor], end='')
-    print('=' * tam)
-    print(f'{txt}'.center(tam))
-    print('=' * tam, end='')
-    print(reset)
+def title(txt, color=1, size=30):
+    colors = list(Normal_colors.values())
+    print(colors[color], end='')
+    print('=' * size)
+    print(f'{txt}'.center(size))
+    print('=' * size, end='')
+    print(reset, '\n')
 
 
+# Reset background color and color
 reset = '\033[m'
 
 # Normal colors - cores normais
@@ -66,6 +68,7 @@ Inclements = {
 }
 
 # Demonstration
+title('Normal colors')
 for name, color in Normal_colors.items():
     print(f'{color}{name.title()}{reset}')
 print()
